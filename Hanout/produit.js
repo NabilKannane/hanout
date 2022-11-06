@@ -7,7 +7,7 @@ const prods=[
         hdd :'500 GB',
         isSSD : true,
         processeur :'i7',
-        image :'https://purepng.com/public/uploads/large/google-stadia-logo-3cx.png',
+        image :'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqsX6HkXMkqsqXO8KYqOJeAuocw66DKvhEWR8_mlcisnrsf9giSulPdiwjihRdpUznYtI&usqp=CAU',
         description :'loremh jkhj hvj jh jh kjhfhgfghj'
     }
     ,
@@ -19,7 +19,7 @@ const prods=[
         hdd :'500 GB',
         isSSD : true,
         processeur :'i7',
-        image :'https://purepng.com/public/uploads/large/google-stadia-logo-3cx.png',
+        image :'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqPCvS4qlu1tjsODLKSYiRPnc64lX_KKp_ERyTKFtvlkddiGEuQR-TUpS6vaA2eNeljVw&usqp=CAU',
         description :'loremh jkhj hvj jh jh kjhfhgfghj'
     }
     ,

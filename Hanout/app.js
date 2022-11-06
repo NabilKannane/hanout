@@ -17,31 +17,20 @@ const server = http.createServer((request,response)=>{
                 response.write("file not found !");
             }else{
                 console.table(prods);
+                let produits="";
                 for(let i=0;i<prods.length;i++){
-                    data = data+home.replace("{% produits %}",
-                    `<div class="product">
-                    <img src="${prods[i].image}" alt="" width="250">
-                    <h3>${prods[i].marque} : ${prods[i].modele}</h3>
-                    <h4>Ram : ${prods[i].ram}</h4>
-                    <h4>HDD : ${prods[i].hdd} ${prods[i].isSSD}</h4>
-                    <h4>CPU : ${prods[i].processeur}</h4>
-                    <h4>description : ${prods[i].description}</h4>
-                </div>`)
-
-                // data = home.replace("{% srcImg %}",prods[i].image);
-                // data = data.replace("{% marque %}",prods[i].marque); 
-                // data = data.replace("{% modele %}",prods[i].modele); 
-                // data = data.replace("{% ram %}",prods[i].ram); 
-                // data = data.replace("{% hdd %}",prods[i].hdd);
-                // if(prods[i].isSSD)data = data.replace("{% isSSD %}","SSD");
-                // else{data = data.replace("{% isSSD %}","HDD");}
-                // data = data.replace("{% processeur %}",prods[i].processeur);
-                // data = data.replace("{% description %}",prods[i].description);
-                }
-
+                produits = produits+`<div class="product">
+                                    <img src="${prods[i].image}" alt="" width="250">
+                                    <h3>${prods[i].marque} : ${prods[i].modele}</h3>
+                                    <h4>Ram : ${prods[i].ram}</h4>
+                                    <h4>HDD : ${prods[i].hdd} ${prods[i].isSSD}</h4>
+                                    <h4>CPU : ${prods[i].processeur}</h4>
+                                    <h4>description : ${prods[i].description}</h4>
+                                    </div>`;
+          }
+                    data = home.replace("{% produits %}",produits);
                 response.end(data);
             }
-
             response.end();
         });
 
