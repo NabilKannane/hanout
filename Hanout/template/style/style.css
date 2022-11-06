@@ -1,41 +1,96 @@
+:root{
+    --color1: rgb(0, 128, 255);
+    --color2: rgb(97, 175, 253);
+}
+
 *{
     margin: 0%;
     padding: 0%;
-    font-family: "Poppons";
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 header{
-    background-color: orangered;
+    background: var(--color1);
     padding: 30px;
     text-align: center;
+    color: #fff;
 }
 
 nav{
-    background-color: rgb(255, 210, 210);
+    background-color: var(--color2);
     text-align: center;
-
-    padding: 10px;
+    padding: 15px;
 }
 
 a{
-    color: black;
-    padding: 0 10px;
+    color: #fff;
+    padding: 5px 50px;
     text-decoration: none;
+    background-color: rgba(27, 69, 174, 0.729);
+    border-radius: 5px;
 }
 section{
-    margin: 10px;
+    margin: 0px;
+
     display: flex;
-    background-color: rgb(255, 209, 187);
-    padding: 30px;
+    flex-wrap: wrap;
+
+    background-color: rgba(32, 41, 83, 0.06);
+    padding: 50px;
     justify-content: space-between;
 }
 
 .product{
-    background-color: rgb(255, 203, 172);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.123) 0px 0px 20px;
     border-radius: 10px;
+    width: 350px;
     padding: 20px;
+    margin: 10px;
     text-align: center;
     width: max-content;
     
+}
+
+.product h3{
+    background-color: var(--color1);
+    color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+
+
+/*===================== CONTACT =====================*/
+form{
+    background-color: var(--color2);
+    width: 80%;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 150px;
+}
+
+form .input{
+    margin: 5px;
+    width: 300px;
+}
+
+form button{
+    margin: 10px;
+    padding: 0 15px;
+    background-color: var(--color1);
+    border: none;
+    padding: 5px 50px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*===================== CONTACT =====================*/
+.s-contact form{
+    display: inline-block;
+}
+.s-contact form input{
+   margin: 20px;
 }
